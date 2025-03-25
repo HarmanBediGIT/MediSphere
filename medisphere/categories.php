@@ -159,9 +159,9 @@
                 // Select an image based on the current index
                 $imagePath = $images[$index % count($images)];
             ?>
-                <div class="card">
+                <div class="card" onclick="window.location.href='category_products.php?code=<?php echo urlencode($row['code']); ?>'">
                     <div class="card-inner">
-                        <div class="card-front"style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                        <div class="card-front" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
                             <img src="<?php echo $imagePath; ?>" style="width: 50%; height: 50%; object-fit: cover;" alt="Product Image" />
                             <div class="category-name" style="margin-top: 10px; font-size: 18px; font-weight: bold;">
                                 <?php echo htmlspecialchars($row['name']); ?>
@@ -169,19 +169,14 @@
                         </div>
                         <div class="card-back">
                             <div class="category-details">
-                                <div class="category-code">Unique Code : <?php echo htmlspecialchars($row['code']); ?></div>
+                                <div class="category-code">Unique Code: <?php echo htmlspecialchars($row['code']); ?></div>
                                 <div class="category-name"><?php echo htmlspecialchars($row['name']); ?></div>
-                                <div class="category-code">Price Range : <?php echo htmlspecialchars($row['price_range']); ?></div>
-                                <!-- <div>
-                                    <?php 
-                                    // Check if qty > 100 and display the appropriate message
-                                    // echo htmlspecialchars($row['qty'] > 100 ? "In Stock" : "Hurry !! Only ".$row['qty']." left !!");
-                                    ?>
-                                </div> -->
+                                <div class="category-code">Price Range: <?php echo htmlspecialchars($row['price_range']); ?></div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             <?php 
                 // Increment the index for the next image
                 $index++;
