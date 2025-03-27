@@ -104,11 +104,11 @@
     }
     
     // Show the alert if the item was removed successfully
-    if (isset($_SESSION['item_removed']) && $_SESSION['item_removed'] === true) {
-        echo "<script> alert('Item removed successfully!'); </script>";
-        // Unset the session variable to prevent showing the alert again on refresh
-        unset($_SESSION['item_removed']);
-    }
+    // if (isset($_SESSION['item_removed']) && $_SESSION['item_removed'] === true) {
+    //     echo "<script> alert('Item removed successfully!'); </script>";
+    //     // Unset the session variable to prevent showing the alert again on refresh
+    //     unset($_SESSION['item_removed']);
+    // }
 ?>
 
 <!DOCTYPE html>
