@@ -350,6 +350,7 @@
 
         <section id="hero" class="hero">
             <div class="hero-content">
+                <img src="images/medisphere.png" style="width:20%; margin-bottom:-50px;"> </img>
                 <h1>MediSphere </h1> <h2>Empowering Healthcare, Delivering Quality. </h2>
                 <p>"Welcome to the future of healthcare, where quality meets innovation. At MediSphere, we don’t just offer equipment — we deliver solutions that empower care, elevate efficiency, and enhance outcomes. Our mission is clear : to provide the best in medical technology, helping you stay ahead in a world where health never stands still. With a commitment to excellence and cutting-edge products, we redefine healthcare so you can focus on what truly matters — delivering care with confidence. Empowering healthcare, delivering quality." </p>
                 <a href="home.php" class="cta">Explore Us</a>
